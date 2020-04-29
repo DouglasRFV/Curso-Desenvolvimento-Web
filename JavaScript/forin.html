@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript</title>
+        <script>
+
+            //var lista_Convidados = ['Douglas', 'Rafael', 'Maria', 'Luísa', 'Pedro']
+
+            var lista_Convidados = []
+
+            lista_Convidados['a'] = 'Douglas'
+            lista_Convidados[10] = 'Maria'
+            lista_Convidados['zebra'] = 'Pedro'
+            lista_Convidados[-1] = 'Rafael'
+            lista_Convidados[true] = 'Luísa'
+
+            console.log(lista_Convidados)
+
+            for(var x in lista_Convidados){ //o x do forin sempre é atribuido ao valor dos indices do array que ele está percorrendo.
+                console.log('Índice ' + x + ' valor = ' + lista_Convidados[x])
+            }
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
