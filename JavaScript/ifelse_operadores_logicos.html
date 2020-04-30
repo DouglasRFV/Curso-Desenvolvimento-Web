@@ -17,16 +17,17 @@
 
 			var media  = 7
 			var faltas_maximas = 15
-			
+
+			// && Retorna true se todas as condições forem verdadeiras;
+			// || Retorna true se pelo menos uma das condições forem verdadeiras;
 			if (nota >= media && faltas <= faltas_maximas) {
 				document.write('APROVADO')
-			}
-			else{
+			} else {
 				document.write('REPROVADO')
 			}
 			
-			// var resultado = (nota >= media && faltas <= faltas_maximas) ? 'Aprovado' : 'Reprovado'
-			// document.write(resultado)
+			var resultado = (nota >= media && faltas <= faltas_maximas) ? 'APROVADO' : 'REPROVADO'
+			document.write(resultado)
 		</script>
 	</head>
 

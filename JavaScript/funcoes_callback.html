@@ -6,9 +6,14 @@
     <title>JavaScript</title>
     <script>
 
+        let id = prompt('Insira o id da requisição: ');
+        id = parseInt(id);
+        document.write(`O id da requisição é ${id}`);
+
         function exibirArtigo(id, callbackSucesso, callbackErro) {
             //lógica: recuperar o id via requisição http
-            if (true) {
+
+            if (id === 1) {
                 callbackSucesso("Funções de callback em JS", "Funções de callback são utilizadas...")
             }
             else{
@@ -26,7 +31,7 @@
             document.write("<p><b>Erro:</b>" + erro + "</p>")
         }
 
-        exibirArtigo(1, callbackSucesso, callbackErro)
+        exibirArtigo(id, callbackSucesso, callbackErro)
 
     </script>
 </head>
